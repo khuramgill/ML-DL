@@ -17,7 +17,6 @@ def Percentile(Arr , x):
 if __name__ == "__main__":
     speed = [99,86,87,88,111,86,103,87,94,78,77,85,86]
     ages = [5,31,43,48,50,41,7,11,15,39,80,82,32,2,8,6,25,36,27,61,31]
-    print("Percentile of speed is: ", Percentile(ages, 75))
     mean_speed, median_speed, std_speed, var_speed = ThreeM_Var(speed)
     percentile_ages = Percentile(ages, 75)
     
