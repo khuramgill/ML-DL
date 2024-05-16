@@ -58,7 +58,7 @@ plt.figure(figsize=(10, 6))
 plt.bar(x, y, color=colors)
 
 # Additional customization
-plt.title('Bar Chart with Different Colors')
+plt.title('Bar Chart Between User and Donors IDs')
 plt.xlabel('User IDs')
 plt.ylabel('Donor IDs')
 plt.grid(True)
