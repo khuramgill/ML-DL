@@ -17,11 +17,16 @@ def bar(x,y):
     plt.show()
 
 def line(x,y):
-    
-    plt.plot(x,y)
+    # using default X-axis and marker properties
+    plt.subplot(2,2,1)
+    plt.plot(y,marker = '^',mec = 'hotpink',mfc = 'black' , ms = 10)
+    # using custom X-axis and marker properties
+    plt.subplot(2,2,3)
+    plt.plot(x,marker = '*',mec = 'blue',mfc = 'red' , ls=":" , lw=0.9)
+    # plt.plot(x,y,x,y**2,x,y**3)
     plt.xlabel("X-Axis")
     plt.ylabel("Y-Axis")
-    plt.grid(True)
+    plt.grid(color = 'g',ls=':',lw = 0.9)
     plt.show()
 
 def vline(x,y):
@@ -36,8 +41,12 @@ def vline(x,y):
 
 def Dot(x,y):
     # plt.plot(x,y)
-    plt.scatter(x,y)
-    plt.grid(True)
+    colors = np.array([0, 10, 20, 30, 40, 45, 50, 55, 60, 70, 80, 90, 100])
+    plt.subplot(2,2,1)
+    plt.scatter(y,x, color = 'blue', marker = '^', s = 12,)
+    plt.subplot(2,2,3)
+    plt.scatter(x,y, color='Hotpink', marker = '*', s = 12)
+    plt.grid(color = 'g',ls=':',lw = 0.9)
     plt.show()
 
 if __name__ == "__main__":
