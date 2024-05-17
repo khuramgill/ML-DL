@@ -70,7 +70,7 @@ if __name__ == "__main__":
     x, y = random()
     print("Values of X: ", x)
     print("Values of Y: ",y)
-    Pie()
+    bar(x,y)
 
 
 
