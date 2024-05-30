@@ -1,6 +1,5 @@
 import mysql.connector
-import matplotlib.pyplot as plt
-import numpy as np
+
 
 # Database connection configuration
 db_config = {
